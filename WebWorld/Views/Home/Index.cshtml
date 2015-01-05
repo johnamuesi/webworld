@@ -1,0 +1,33 @@
+﻿@model IEnumerable<WebWorld.Data.Topic>
+
+
+    <div class="jumbotron">
+        <h1>Webworld</h1>
+        <p class="lead">Some lorem ipsum text</p>
+        <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h2>xxxxxx</h2>
+            <p>
+                Pellentesque eleifend sem nec tel
+            </p>
+            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Get more libraries</h2>
+            <p>finibus lectus. Cras at arcu eros. Pellentesque sed sagittis urna, quis eleifend lorem. Integer sollicitudin lectus viverra condimentum efficitur.</p>
+        </div>
+        <div class="col-md-4">
+            <h2>Web Hosting</h2>
+            <p>finibus lectus. Cras at arcu eros. Pellentesque sed sagittis urna, quis eleifend lorem. Integer sollicitudin lectus viverra condimentum efficitur.</p>
+        </div>
+    </div>
+
+
+    @foreach (var topic in Model)
+    {
+        <div>@topic.Title</div>
+        <div>--@topic.Body</div>
+    }
